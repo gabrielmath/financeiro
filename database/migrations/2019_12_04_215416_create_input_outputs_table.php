@@ -21,7 +21,7 @@ class CreateInputOutputsTable extends Migration
             $table->boolean('is_unique_pay')->default(true);
             $table->integer('amount_installments')->default(1);
             $table->decimal('total_value',10,2);
-            $table->boolean('is_finalized')->default();
+            $table->boolean('is_finalized')->default(0);
             $table->timestamps();
         });
     }
